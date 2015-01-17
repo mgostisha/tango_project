@@ -14,7 +14,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'tango_project.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-	url(r'^$', 'tango_project.views.index', name='home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^rango/', include('rango.urls')),
     url(r'^accounts/register/$', MyRegistrationView.as_view(), name='registration_register'),
